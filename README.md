@@ -17,7 +17,7 @@ python main.py
 
 После этого закинте этот `ключ` в файл `.env`:
 
-
+<img width="352" height="22" alt="image" src="https://github.com/user-attachments/assets/4a290ffb-f683-47c9-8adf-43f96cb7d954" />
 
 И при запуске всё должно заработать.
 
