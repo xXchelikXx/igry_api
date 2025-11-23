@@ -2,6 +2,7 @@ import requests
 import os
 from dotenv import load_dotenv
 
+
 def get_screenshots(api_key, best_game):
     screenshots_url = f"https://api.rawg.io/api/games/{best_game['slug']}/screenshots"
     params = {"key": api_key}
@@ -28,7 +29,7 @@ def get_best_games(api_key):
     response_results = response.json()["results"]
 
     for best_game in response_results:
-        print(f"""    
+        print(f"""
 Название: {best_game["name"]}
 Дата: {best_game["released"]}
 Ссылка: https://rawg.io/games/{best_game["slug"]}""")
@@ -52,3 +53,4 @@ def main():
 
 if __name__=="__main__":
     main()
+    
